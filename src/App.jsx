@@ -20,9 +20,13 @@ function App() {
     <>
       <div className="d-flex">Lista de tareas</div>
       {guardarTarea.length}
-      <div className="card d-flex" >
+      <div className="card d-flex">
         <input type="text" onChange={handleChange} value={ingresarNuevaTarea} />
-        <button className="btn btn-dark" onClick={handleClick} type={'submit'}>
+        <button
+          className="btn btn-dark p-3"
+          onClick={handleClick}
+          type={'submit'}
+        >
           Ingresa Tarea
         </button>
 
